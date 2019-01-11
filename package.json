@@ -2,13 +2,11 @@
   "name": "pdfbackground",
   "version": "1.0.0",
   "description": "PDF Background Extractor",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "server.js",
   "author": "Bobby Patterson/Chris Stevens",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "dotenv": "^6.2.0"
   }
 }
