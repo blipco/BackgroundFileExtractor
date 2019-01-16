@@ -18,7 +18,7 @@ axios({
         })
         .then((response1) => {
             console.log('filetype',fileType(response1.data).ext)
-            fs.writeFile(`./backgroundFiles/${fileIds[i]}.${fileType(response1.data).ext}`,response1.data, (error) => {
+            fs.writeFile(`./fileStorage/${fileIds[i]}.${fileType(response1.data).ext}`,response1.data, (error) => {
                 if (error) console.log('fs.writeFile Error', error);
                     console.log('fs.WriteFile Saved!');
             });
