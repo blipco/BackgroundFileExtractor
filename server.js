@@ -8,7 +8,7 @@ for(let i=0;i<=fileIds.length;i++) {
 axios({
         url:`https://api.goformz.com:443/v2/files/${fileIds[i]}`,
         method: 'get',
-        headers: {'Authorization':`Basic ZXJpbi5rYXJ3ZWlrQGFsaW1ha2dyb3VwLmNvbTpnb2Zvcm16MQ==`},
+        headers: {'Authorization':`Basic ${process.env.BASIC}==`},
     })
     .then((response) => {
         axios({
