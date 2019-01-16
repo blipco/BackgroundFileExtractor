@@ -2,7 +2,7 @@ const axios = require('axios');
 const fs = require('fs');
 require('dotenv').config();
 const fileType = require('file-type');
-const fileIds = require('./fileIds');
+const fileIds = require('./fileIds/fileIds');
 
 for(let i=0;i<=fileIds.length;i++) {
 axios({
